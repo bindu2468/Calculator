@@ -1,0 +1,69 @@
+/* Center the calculator on the page */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e2a3a;
+    font-family: Arial, sans-serif;
+}
+
+/* The calculator box */
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #222831;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #aaa;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 10px;
+    letter-spacing: 3px;
+}
+
+/* The number screen */
+.display {
+    background: #111;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Each row: 4 buttons side by side */
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* All buttons */
+button {
+    flex: 1;              /* every button takes equal width */
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 12px;
+    background: #393e46;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+/* Special button colors */
+.operator  { background: #ff9f0a; }
+.equal     { background: #34c759; }
+.clear     { background: #ff453a; }
+.backspace,
+.sign      { background: #6c757d; }
